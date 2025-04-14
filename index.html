@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Live Projects: Play & Learn</title>
+	<link rel="stylesheet" href="./src/css/style.css">
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<script src="./src/js/script.js"></script>
+</head>
+
+<body>
+	<!-- Controls -->
+	<header class="controls">
+		<div class="controls__wrapper">
+			<img src="./src/img/icons/main-logo.png" alt="logo">
+			<div data-translate="learn" class="controls__title">Learn and play</div>
+		</div>
+		<div class="controls__wrapper">
+			<button class="controls__theme-btn"><img class="theme-img" data-light="./src/img/icons/mode.png"
+					data-dark="./src/img/icons/mode-dark.png" src="./src/img/icons/mode.png" alt="theme"></button>
+			<div class="controls__lang">
+				<button class="controls__lang-btn"><img class="theme-img" data-light="./src/img/icons/lang.png"
+						data-dark="./src/img/icons/lang-dark.png" src="./src/img/icons/lang.png"
+						alt="language"></button>:
+				<div class="controls__lang-curr">en</div>
+			</div>
+			<a target="_blank" href="https://github.com/thrillu4" class="controls__github-btn"><img class="theme-img"
+					data-light="./src/img/icons/github.png" data-dark="./src/img/icons/github-dark.png"
+					src="./src/img/icons/github.png" alt="github"></a>
+		</div>
+	</header>
+	<!-- Controls -->
+
+	<!-- Promo section -->
+	<section class="promo" id="promo">
+		<header class="promo__header header">
+			<div class="promo__title-wrapper">
+				<div class="divider "></div>
+				<h1 data-translate="title" class="promo__title">Live Projects</h1>
+			</div>
+			<h2 data-translate="subtitle" class="promo__subtitle">Which mini-project do you want to try today?</h2>
+			<div class="header__line-vert">
+				<h3 data-translate="choose_title" class="promo__choosetitle header__lane-gor header__lane-first">Choose
+					where to start!</h3>
+			</div>
+			<img class="arrow theme-img" data-light="./src/img/icons/arrow.png"
+				data-dark="./src/img/icons/arrow-dark.png" src="./src/img/icons/arrow.png" alt="arrow">
+		</header>
+
+		<div class="promo__intro content">
+			<h3 data-translate="intro_title" class="promo__intro-title">Contents</h3>
+			<div class="table__wrapper">
+				<a data-translate="intro_subtitle" href="#introduction" class="promo__intro-subtitle">Introduction</a>
+				<ol class="promo__table">
+					<li><a data-translate="todo" href="#todo">Todo List</a></li>
+					<li><a data-translate="weather" href="#weather">Weather API project</a></li>
+					<li><a data-translate="ecommerce" href="#ecommerce">E Commerce Cart Functionality</a></li>
+					<li><a data-translate="tracker" href="#tracker">Expense Tracker</a></li>
+					<li><a data-translate="calculator" href="#calculator">Calculator</a></li>
+					<li><a data-translate="quiz" href="#quiz">Quiz App</a></li>
+					<li><a data-translate="touch" href="#touch">Get In Touch</a></li>
+				</ol>
+			</div>
+		</div>
+	</section>
+	<!-- Promo section -->
+	<div id="particles-js"></div>
+
+	<!-- Introduction section -->
+	<section class="introduction" id="introduction">
+		<div class="header header__projects">
+			<div class="header__line-vert">
+				<h3 data-translate="intro_subtitle" class="header__lane-gor introduction__title">Introduction</h3>
+			</div>
+		</div>
+		<div class="introduction__content content">
+			<p data-translate="intro_content">
+				Welcome to <strong>Live Projects</strong>, a collection of interactive mini-projects designed
+				to help you learn, practice, and experiment with web development. Whether you're looking to
+				build your own <strong>To-Do List</strong>, work with <strong>APIs</strong>, or create a
+				functional
+				<strong>E-commerce Cart</strong>, this platform provides hands-on experience with real-world
+				coding challenges.
+			</p>
+			<p data-translate="intro_content2">
+				Each project is designed to be simple yet practical, allowing you to explore different aspects
+				of <strong>frontend and backend development</strong>. Feel free to modify, improve, and expand
+				upon them to match your own creative ideas!
+			</p>
+			<p data-translate="intro_content3"><strong>Ready to start? Choose a project from the list and dive in!
+					🚀</strong></p>
+		</div>
+	</section>
+	<!-- Introduction section -->
+
+	<!-- Todo List section -->
+	<section class="todo" id="todo">
+		<div class="header header__projects">
+			<div class="header__line-vert">
+				<h3 data-translate="todo" class="header__lane-gor">Todo List</h3>
+			</div>
+			<p data-translate="todo_content">
+				A simple yet powerful To-Do List application designed to help users organize tasks efficiently.
+				Built with a clean and
+				intuitive interface, this project allows users to add, delete, and manage tasks seamlessly. Tasks
+				are persistently
+				stored using localStorage, ensuring that data remains available even after the browser is closed or
+				refreshed. <br><br> The
+				application leverages modern JavaScript, HTML, and CSS to deliver a smooth user experience with a
+				focus on functionality
+				and usability.
+			</p>
+			<div data-translate="features" class="features">Key Features:</div>
+			<ol class="features-keys">
+				<li data-translate="todo_features-keys1">Add new tasks with a single click.</li>
+				<li data-translate="todo_features-keys2">Delete tasks individually.</li>
+				<li data-translate="todo_features-keys3">Persistent task storage using localStorage.</li>
+				<li data-translate="todo_features-keys4">Minimalist and responsive design for a distraction-free
+					experience.</li>
+			</ol>
+			<div data-translate="todo_subdescr" class="subdescr">This project demonstrates core web development
+				concepts, including DOM
+				manipulation, event handling, and client-side
+				data persistence.</div>
+		</div>
+		<div class="content todo__content">
+			<iframe data-src='https://codesandbox.io/p/sandbox/gzkk7f?view=preview'
+				style="width:100%; display: block; border:0; overflow:hidden;" title="To-Do List"
+				allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+				sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>
+		</div>
+	</section>
+	<!-- Todo List section -->
+
+	<!-- Weather Api -->
+	<section class="weather" id="weather">
+		<div class="header header__projects">
+			<div class="header__line-vert">
+				<h3 data-translate="weather" class="header__lane-gor">Weather Api</h3>
+			</div>
+			<p data-translate="weather_content">A dynamic weather application that provides real-time weather
+				information for
+				any city worldwide.
+				Powered by a
+				third-party Weather API, this project allows users to search for a location and instantly view
+				current weather
+				conditions, including temperature, humidity, and more.</p><br>
+			<p data-translate="weather_content2">
+				Built with JavaScript, HTML, and CSS, the application features a
+				clean and responsive design, ensuring a seamless experience across devices.
+			</p>
+
+			<div data-translate="features" class="features">Key Features:</div>
+			<ol class="features-keys">
+				<li data-translate="weather_features-keys1">Real-time weather data fetched via a Weather API.</li>
+				<li data-translate="weather_features-keys2">User-friendly search functionality to check weather by city.
+				</li>
+				<li data-translate="weather_features-keys3">Displays essential weather details like temperature,
+					humidity, and
+					conditions.</li>
+			</ol>
+			<div data-translate="weather_subdescr" class="subdescr">
+				This project showcases skills in API integration, asynchronous JavaScript (async/await), DOM
+				manipulation, and delivering a practical and engaging user experience.
+			</div>
+		</div>
+		<div class="content weather__content">
+			<iframe data-src='https://codesandbox.io/p/sandbox/c9dnsn'
+				style="width:100%; display: block; border:0; overflow:hidden;" title="Weather Api"
+				allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+				sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>
+		</div>
+	</section>
+	<!-- Weather Api -->
+
+	<!-- E Commerce Cart -->
+	<section class="ecommerce" id="ecommerce">
+		<div class="header header__projects">
+			<div class="header__line-vert">
+				<h3 data-translate="ecommerce" class="header__lane-gor">E Commerce Cart</h3>
+			</div>
+
+			<p data-translate="ecommerce_content">
+				A lightweight e-commerce shopping cart application designed to simulate a simple online shopping
+				experience. Users can
+				browse a list of products, add items to their cart, remove items, and proceed to checkout. The
+				cart's contents are
+				persistently stored using localStorage, ensuring that items remain in the cart even after the page
+				is refreshed.
+			</p><br>
+			<p data-translate="ecommerce_content2">Built
+				with vanilla JavaScript, HTML, and CSS, this project delivers a clean and functional interface with
+				a focus on core web
+				development principles.</p>
+			<div data-translate="features" class="features">Key Features:</div>
+			<ol class="features-keys">
+				<li data-translate="ecommerce_features-keys1">Add products to the cart with a single click.</li>
+				<li data-translate="ecommerce_features-keys2">Remove individual items from the cart.</li>
+				<li data-translate="ecommerce_features-keys3">Persistent cart storage using localStorage for seamless
+					user experience.</li>
+				<li data-translate="ecommerce_features-keys4">Real-time cart total calculation and checkout
+					functionality.</li>
+				<li data-translate="ecommerce_features-keys5">Minimalist design with dynamic DOM updates.</li>
+			</ol>
+			<div data-translate="ecommerce_subdescr" class="subdescr">
+				This project demonstrates proficiency in DOM manipulation, event handling, client-side data
+				persistence,
+				and JavaScript
+				logic, providing a practical foundation for building e-commerce features.
+			</div>
+		</div>
+		<div class="content ecommerce__content">
+			<iframe data-src='https://codesandbox.io/p/sandbox/7jf59h'
+				style="width:100%; display: block; border:0; overflow:hidden;" title="E Commerce Cart"
+				allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+				sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>
+		</div>
+	</section>
+	<!-- E Commerce Cart -->
+
+	<!-- Expense Tracker -->
+	<section class="tracker" id="tracker">
+		<div class="header header__projects">
+			<div class="header__line-vert">
+				<h3 data-translate="tracker" class="header__lane-gor">Expense Tracker</h3>
+			</div>
+			<p data-translate="tracker_content">A straightforward and user-friendly Expense Tracker application designed
+				to help users monitor their
+				spending. Users can
+				add expenses with a name and amount, delete entries, and view a running total of all expenses. The
+				application utilizes
+				localStorage to persist expense data, ensuring that records remain available even after the page is
+				refreshed.</p>
+			<br>
+			<p data-translate="tracker_content2">Built
+				with vanilla JavaScript, HTML, and CSS, this project offers a clean interface and seamless
+				functionality
+				for personal
+				finance tracking.</p>
+
+			<div data-translate="features" class="features">Key Features:</div>
+
+			<ol class="features-keys">
+				<li data-translate="tracker_features-keys1">Add expenses with a name and amount through an intuitive
+					form.</li>
+				<li data-translate="tracker_features-keys2">Delete individual expense entries with a single click.</li>
+				<li data-translate="tracker_features-keys3">Persistent data storage using localStorage for reliable
+					record-keeping.</li>
+				<li data-translate="tracker_features-keys4">Real-time calculation and display of total expenses.</li>
+				<li data-translate="tracker_features-keys5">Simple and responsive design for ease of use across devices.
+				</li>
+			</ol>
+			<div data-translate="tracker_subdescr" class="subdescr">
+				This project showcases skills in DOM manipulation, event handling, client-side data persistence, and
+				dynamic UI updates,
+				providing a practical tool for managing personal expenses.
+			</div>
+		</div>
+		<div class="content tracker__content">
+			<iframe data-src='https://codesandbox.io/p/sandbox/rjszzf'
+				style="width:100%; display: block; border:0; overflow:hidden;" title="Expense Tracker"
+				allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+				sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>
+		</div>
+	</section>
+	<!-- Expense Tracker -->
+
+	<!-- Calculator -->
+	<section class="calculator" id="calculator">
+		<div class="header header__projects">
+			<div class="header__line-vert">
+				<h3 data-translate="calculator" class="header__lane-gor">Calculator</h3>
+			</div>
+			<p data-translate="calculator_content">
+				A versatile and interactive Calculator capable of handling not only basic arithmetic but also advanced
+				operations like square roots, powers, and percentages. Designed with usability in mind, it offers a
+				smooth user
+				experience for a wide range of calculations.
+			</p>
+			<br>
+			<p data-translate="calculator_content2">
+				This project was built using vanilla JavaScript, HTML, and CSS, with support for both mouse and keyboard
+				input.
+				Its modern layout and intuitive functionality make it a reliable tool for day-to-day math needs.
+			</p>
+
+			<div data-translate="features" class="features">Key Features:</div>
+
+			<ol class="features-keys">
+				<li data-translate="calculator_features-keys1">
+					Supports both basic and advanced operations: addition, subtraction, multiplication, division,
+					square, square
+					root, inverse (1/x), sign toggle (+/-), and percentages.
+				</li>
+				<li data-translate="calculator_features-keys2">
+					Intuitive interface with clear input display and a secondary line showing full expressions.
+				</li>
+				<li data-translate="calculator_features-keys3">
+					Keyboard support for convenient data entry and faster interaction.
+				</li>
+				<li data-translate="calculator_features-keys4">
+					Error handling for invalid inputs (e.g., division by zero or incorrect symbols).
+				</li>
+				<li data-translate="calculator_features-keys5">
+					Responsive, clean, and mobile-friendly design with accessible functionality.
+				</li>
+			</ol>
+
+			<div data-translate="calculator_subdescr" class="subdescr">
+				This project showcases essential JavaScript skills, including DOM manipulation, dynamic event handling,
+				and
+				logic structuring—making it a strong example of interactive frontend development.
+			</div>
+		</div>
+		<div class="content calculator__content">
+			<iframe data-src='https://codesandbox.io/p/sandbox/77xt2t'
+				style="width:100%; display: block; border:0; overflow:hidden;" title="Calculator"
+				allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+				sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>
+		</div>
+	</section>
+	<!-- Calculator -->
+
+	<!-- Quiz App -->
+	<section class="quiz" id="quiz">
+		<div class="header header__projects">
+			<div class="header__line-vert">
+				<h3 data-translate="quiz" class="header__lane-gor">Quiz App</h3>
+			</div>
+			<p data-translate="quiz_content1">A compact and engaging Quiz App designed to test users' knowledge through
+				a
+				series of multiple-choice
+				questions. Users
+				can start the quiz, select answers, and view their final score upon completion, with the option to
+				restart for another
+				attempt.</p>
+			<br>
+			<p data-translate="quiz_content2">Built with vanilla JavaScript, HTML, and CSS, this project offers a clean
+				and interactive
+				interface, making
+				learning fun and accessible across devices.</p>
+
+			<div data-translate="quiz" class="features">Key Features:</div>
+
+			<ol class="features-keys">
+				<li data-translate="quiz_features-keys1">Multiple-choice questions with dynamic rendering of questions
+					and answers.</li>
+				<li data-translate="quiz_features-keys2">Tracks user score based on correct answers.</li>
+				<li data-translate="quiz_features-keys3">Interactive interface with clickable answer options and visual
+					feedback.</li>
+				<li data-translate="quiz_features-keys4">Option to restart the quiz to try again.</li>
+				<li data-translate="quiz_features-keys5">Responsive design for a seamless experience on desktops and
+					mobile devices.</li>
+			</ol>
+			<div data-translate="quiz_subdescr" class="subdescr">
+				This project demonstrates skills in DOM manipulation, event handling, state management, and dynamic
+				UI updates,
+				delivering an engaging and educational user experience.
+			</div>
+		</div>
+		<div class="content quiz__content">
+			<iframe data-src='https://codesandbox.io/p/sandbox/j5p4fx'
+				style="width:100%; display: block; border:0; overflow:hidden;" title="Quiz App"
+				allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+				sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>
+		</div>
+	</section>
+	<!-- Quiz App -->
+
+	<!-- Get in touch -->
+	<section class="touch" id="touch">
+		<div class="header">
+			<h3 data-translate="touch" class="touch__title header__lane-gor header__lane-last">Get in touch</h3>
+			<ul class="touch__items">
+				<li>
+					<h3 data-translate="email">Email</h3>
+					<a href="mailto:kraya.work@gmail.com">kraya.work@gmail.com</a>
+				</li>
+				<li>
+					<h3 data-translate="telegram">Telegram</h3>
+					<a target="_blank" href="t.me/real_thrill">@real_thrill</a>
+				</li>
+				<li>
+					<h3 data-translate="address">Address</h3>
+					<span>Ukraine Nikopol</span>
+				</li>
+				<li>
+					<h3 data-translate="elsewhere">Elsewhere</h3>
+					<ul class="touch__icons">
+						<li><a target="_blank" href="https://x.com/krayill"><img class="theme-img"
+									data-light="./src/img/icons/x.png" data-dark="./src/img/icons/x-dark.png"
+									src="./src/img/icons/x.png" alt="twitter"></a></li>
+						<li><a target="_blank" href="https://www.instagram.com/thrillinst/"> <img
+									src="./src/img/icons/instagram.png" alt="instagram"></a>
+						</li>
+						<li><a target="_blank" href="https://www.linkedin.com/in/denis-kraevoy/"><img
+									src="./src/img/icons/linkedin.png" alt="linkedin"></a>
+						</li>
+						<li><a target="_blank" href="https://github.com/thrillu4"><img class="theme-img"
+									data-light="./src/img/icons/github.png" data-dark="./src/img/icons/github-dark.png"
+									src="./src/img/icons/github.png" alt="github"></a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="content">
+			<h3 data-translate="feedback" class="touch__feedback">Feedback on any questions</h3>
+			<form class="touch__form">
+				<div class="touch__form-fields">
+					<div class="inputs__wrap">
+						<input data-translate="placeholder_name" type="text" name="name" id="name" placeholder="Name">
+						<input data-translate="placeholder_email" type="email" name="email" id="email"
+							placeholder="Email">
+					</div>
+					<textarea data-translate="placeholder_message" name="message" id="message"
+						placeholder="Message"></textarea>
+				</div>
+				<button data-translate="message" class="submit__button" type="submit">Send Message</button>
+			</form>
+			<div data-translate="rights" class="touch__copyright">© Untitled. All rights reserved. Design: Denys
+				K.
+			</div>
+		</div>
+	</section>
+	<!-- Get in touch -->
+</body>
+
+</html>
